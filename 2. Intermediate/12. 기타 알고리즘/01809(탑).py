@@ -1,0 +1,26 @@
+# 링크 : https://jungol.co.kr/problem/1809
+import sys
+
+input = sys.stdin.readline
+
+N:int = int(input().rstrip())
+heights:list = list(map(int, input().split()))
+
+stack = []
+result:list = [0] * N
+
+# 정방향으로 진행해야 합니다.
+for i in range(N):
+    h = heights[i]
+    while stack and stack[-1][1] <= h:
+        stack.pop()
+    
+    if stack:
+        result[i] = stack[-1][0]
+    else:
+        result[i] = 0
+
+    # 1-based index로 해야 하네요.
+    stack.append((i + 1, h))
+
+print(*result)
