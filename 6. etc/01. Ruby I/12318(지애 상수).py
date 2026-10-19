@@ -2,6 +2,7 @@
 import sys
 import time
 
+# 백준 링크 : https://www.acmicpc.net/problem/22222
 # 에디토리얼 : https://infossm.github.io/blog/2025/01/31/problem-solving-22222/
 # 참고 소스 코드 : https://lamp2357.tistory.com/31
 
