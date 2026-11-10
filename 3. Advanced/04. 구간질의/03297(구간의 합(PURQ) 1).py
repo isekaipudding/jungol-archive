@@ -10,9 +10,9 @@ def query_sum(left, right) -> int:
     left += size
     right += size
     
-    result = 0  # 덧셈의 항등원인 0으로 초기화
+    result = 0 # 덧셈의 항등원인 0으로 초기화
     
-    # 두 포인터가 교차할 때까지 (루트 방향으로 올라가며) 반복
+    # 두 포인터가 교차할 때까지 루트 방향으로 올라가며 반복
     while left <= right:
         # 2. left가 홀수 (오른쪽 자식)일 때
         if left & 1: 
@@ -51,7 +51,7 @@ bits:int = int(math.ceil(math.log2(N)))
 size:int = 1 << bits
 
 # 덧셈이므로 0으로 초기화
-SegmentTree: list = [0] * (2 * size)
+SegmentTree:list = [0] * (2 * size)
 
 # 초기 배열 트리 리프 노드에 삽입
 for i in range(N):
