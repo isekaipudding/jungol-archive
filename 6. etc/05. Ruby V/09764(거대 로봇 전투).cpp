@@ -43,7 +43,7 @@ int segment_ends[MAXN];
 int result[MAXN];
 
 inline int get_ancestor(int node, int k) {
-    for (int j = 0; j < LOG; ++j) {
+    for (int j = 0; j < LOG; j++) {
         if ((k >> j) & 1) {
             node = up_table[node][j];
         }
