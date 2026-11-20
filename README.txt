@@ -29,3 +29,6 @@ https://jungol.co.kr/about/provision
 좀 더 빠른 코딩 테스트 준비를 위해 실버 문제들까지 업로드합니다.
 하지만 브론즈 문제들은 굳이 에디토리얼 없이도 스스로 풀 수 있기 때문에
 단계별 문제가 아닌 브론즈 문제들은 따로 커밋하지 않습니다.
+
+참고로 백준(baekjoon) repository도 있으니 여기 아래 링크를 통해 baekjoon 소스 코드도 확인할 수 있습니다.
+https://github.com/isekaipudding/renewal-baekjoon-archive
